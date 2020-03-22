@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" type= "text/css" href="style.css">
+
+<div class="form">
+	  
+	  <div id="login">   
+		<h1><img src=iii.png>WELCOME TO THE SPACE CAT DATABASE</h1>
+		<h5>This is for space cats only. You will only be allowed in if you are a vertified space cat and we've given you an account with us.</h5>
+		<p>.　　　　　　　　　　 ✦ 　　　　   　 　　　˚　　　　　　　　　　　　　　*　　　　　　   　　　　　　　　　　　　　　　.　　　　　　　　　　　　　　. 　　 　　　　　　　 ✦ 　　　　　　　　　　 　 ‍ ‍ ‍ ‍ 　　　　 　　　　　　　　　　　　,　　   　
+
+			.　　　　　　　　　　　　　.　　　ﾟ　  　　　.　　　　　　　　　　　　　.
+			
+			　　　　　　,　　　　　　　.　　　　　　    　　　　 　　　　　　　　　　　　　　　　　　 ☀️ 　　　　　　　　　　　　　　　　　　    　      　　　　　        　　　　　　 🧼
+
+			🐱  　　　　　   　　　　　.　　　　　　　　　　　.　　　　　　　　　　   　
+			
+			　˚　　　　　　　　　　　　　　　　　　　　　ﾟ　　　　　.　　　　　　　　　　　　　　　. 　　 　 🌎 ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ,　 　　　　　　　　　　　　　　* .　　　　　 　　　　　　　　　　　　　　.　　　　　　　　　　 ✦ 　　　　   　 　　　˚　　　　　　　　　　　　　　*　　　　　　   　　　　　　　　　　　　　　　.　　　　　　　　　　　　　　.. </p>
+		<h2>Please log in!</h2>
+		
+		<form action="/" method="post">
+			<div>
+				<label>
+					   <span class="req"></span>
+				  </label>
+			</div>
+			
+			<div> 
+				<label>
+					Username<span class="req">:</span>
+			   </label>
+			</div>
+		  <div class="field-wrap"><label>
+				<span class="req"></span>
+		   </label>
+		  <label>
+			<span class="req"></span>
+		  </label>
+		  <input type="email"required autocomplete="off"/>
+		</div>
+
+
+		<div> 
+			<label>
+				Password<span class="req">:</span>
+		   </label>
+		</div>
+		<div class="field-wrap">
+		  <label>
+			<span class="req"></span>
+		  </label>
+		  <input type="password"required autocomplete="off"/>
+		</div>
+		
+		<button class="button button-block"/>Log In</button>
+
+		<input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+      </iframe>
+		<script>
+			function goPython(){
+				$.ajax({
+				  url: "MYSCRIPT.py",
+				 context: document.body
+				}).done(function() {
+				 alert('finished python script');;
+				});
+			}
+		</script>
+		
+		</form>
+
+	  </div>
+	  
+	</div><!-- tab-content -->
+	
+</div> <!-- /form -->
+</html>
